@@ -37,7 +37,7 @@ void search(int index)
 
 void iterative()
 {
-    for(int b = 0; b <  (1<<n); b++)
+    for(int b = 0; b < (1<<n); b++)
     {
         vector<int> subset;
         for(int i = 0; i<n; i++)
