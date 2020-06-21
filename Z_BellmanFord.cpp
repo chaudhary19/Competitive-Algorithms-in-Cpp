@@ -30,7 +30,7 @@ bool bellman_ford(int n, int m, int source)
             if(dist[u] + d < dist[v])
             {
                 dist[v] = dist[u] + d;
-                pred[v] = pred[u];
+                pred[v] = u;
             }
         }
     }
