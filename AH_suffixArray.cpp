@@ -75,3 +75,4 @@ int32_t main()
 }
 
 // Thanks to pashka for teaching
+// Time Complexity to build suffix table: O(nlogn^2)
