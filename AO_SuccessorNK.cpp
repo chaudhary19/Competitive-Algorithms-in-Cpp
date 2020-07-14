@@ -15,17 +15,17 @@ int sparse[100005][K + 1];
 
 void preCompute()
 {
-    for(int j = 1; j<=K; j++)
+    for(int j = 0; j<=K; j++)
     {
         for(int i = 1; i<=n; i++)
         {
-            if(j == 1)
+            if(j == 0)
             {
                 sparse[i][j] = succ[i];
             }
             else
             {
-                sparse[i][j] = sparse[sparse[i][j/2]][j/2];
+                sparse[i][j] = sparse[sparse[i][j - 1]][j - 1];
             }          
         }
     }
@@ -48,9 +48,9 @@ int query(int node, int dist)
 {
     while(dist>0)
     {
-        int p = bin_pow(2, (int)log2(dist));
+        int p = (int)log2(dist);
         node = sparse[node][p];
-        dist -= p;
+        dist -= bin_pow(2, p);
     }
     return node;
 }
@@ -92,7 +92,6 @@ int32_t main()
 
 
 /*
-
 9 9
 1 3
 9 3
@@ -124,5 +123,4 @@ int32_t main()
 9 is present at 9 dist from node 9
 5 7
 2 is present at 7 dist from node 5
-
 */
