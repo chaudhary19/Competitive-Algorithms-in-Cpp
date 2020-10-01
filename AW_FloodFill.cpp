@@ -17,9 +17,7 @@ void floodFill(int image[M][N], int x, int y, int prevColor, int newColor)
 		return; 
 	if (image[x][y] == newColor) 
 		return; 
-    
 	image[x][y] = newColor; 
-
 	floodFill(image, x+1, y, prevColor, newColor); 
 	floodFill(image, x-1, y, prevColor, newColor); 
 	floodFill(image, x, y+1, prevColor, newColor); 
@@ -44,7 +42,6 @@ int32_t main()
 		      }; 
     int x = 1, y = 1, newColor = 3; 
     floodFill(image, x, y, newColor); 
-
     cout << "After FloodFill: "<<endl; 
     for (int i=0; i<M; i++) 
     { 
