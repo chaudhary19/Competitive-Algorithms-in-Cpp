@@ -41,7 +41,7 @@ int32_t main()
                         {1, 1, 2, 1, 1, 0}, 
                         {1, 1, 1, 2, 1, 1}, 
                         {2, 1, 1, 0, 0, 1},  
-					           }; 
+		      }; 
     int x = 1, y = 1, newColor = 3; 
     floodFill(image, x, y, newColor); 
 
