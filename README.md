@@ -7,7 +7,7 @@
  <li>Please don't contribute those algorithms which are already present there (will be waste of time for you)</li>
  <li>Please try to write the modular code as much as you can (dividing code into sections/functions)</li>
  <li>Please raise an issue first to add a new file/algorithm</li>
- <li>If you have the optimised code for any of the algorithms then please name the file with the name of algorithn long with language and add "optimized" in the name.
+ <li>If you have the optimised code for any of the algorithms then please name the file with the name of algorithn along with language and add "optimized" in the name.
  </ul>
  
  <h1>Happy Coding!!</h1>
