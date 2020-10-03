@@ -14,17 +14,17 @@ int DNF(int A[], int end)
 	{
 		if (A[mid] < pivot)		 
 		{
-      int temp=A[start];
-      A[start]=A[mid];
-      A[mid]=temp;
-			++start, ++mid;
+		      int temp=A[start];
+		      A[start]=A[mid];
+		      A[mid]=temp;
+		      ++start, ++mid;
 		}
 		else if (A[mid] > pivot)	
 		{
-			int temp=A[mid];
-      A[mid]=A[end];
-      A[end]=temp;
-			--end;
+		      int temp=A[mid];
+		      A[mid]=A[end];
+		      A[end]=temp;
+		      --end;
 		}
 		else						 
 		{
